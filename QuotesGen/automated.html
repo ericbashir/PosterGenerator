@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AUTOMATED DOUBLE D Quotes-Poster Generator</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="header">
+            <img src="images/logo-y.png" alt="" class="logo-x">
+            <p class="headtext">QUOTES POSTER<br>GENERATOR</p>
+        </div>
+        <div class="input-group">
+            <h3 class="title">AUTOMATED</h3>
+            <div class="quote">
+                <textarea id="top-text" disabled></textarea> <br>
+                <input type="range" id="top-text-size-input" min="0.05" max="0.25" value="0.10" step="0.01" style="display:none;" disabled>
+            </div>
+
+            <div class="author">
+                <input type="text" id="bottom-text" disabled><br>
+                <input type="range" id="bottom-text-size-input" min="0.05" max="0.25" value="0.015" step="0.01" style="display:none;" disabled>
+            </div>
+        </div>
+        <div class="image-in">
+            <p class="background-guide">Select any Random Picture to Activate:</p>
+            <input type="file" id="image-input" accept="image/*">
+            <img src="js/backgrounds/10.png" id="bkg" style="display:none">
+        </div>
+        <p>
+        <p class="save">DOUBLE CLICK ON THE GENERATE BUTTON AND WAIT FOR A FEW SECONDS <br>
+            <button id="generate-btn">Generate!</button>
+        </p>
+        <p>
+            <canvas id="meme-canvas" title="Right click -> &quot;Save image as...&quot;">CANVAS NOT SUPPORTED! <br> SUPPORTED BROWSERS: CHROME, FIREFOX $ SAFARI</canvas>
+        </p>
+
+        <p class="save">
+            <button id="view">View As Image!</button><br>
+            <!--            <a download="Double_D_Poster.png" id="img-download" onclick="prepareDownload()">Download!</a>-->
+            TO SAVE, RIGHT CLICK OR TOUCH-AND-HOLD ON IMAGE AND SELECT 'SAVE AS'
+        </p>
+
+        <div id="imgs">
+
+        </div>
+
+        <div class="footer">
+            <p class="info">
+                <span class="pixara">(c) PIXARA <br><span class="eric">Built by Eric Bashir</span></span>
+            </p>
+        </div>
+        <script src="js/automated.js"></script>
+        <script src="js/canvas2image.js"></script>
+
+
+    </body>
+</html>
+
